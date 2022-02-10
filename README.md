@@ -5,8 +5,11 @@
 ## IMPORTANT KEY
 
 `projectName` name of the project : String
+
 `outputNum` data sample size : int
+
 `outputName` name of the output file : String
+
 `data` : list of dictionary; contain different data type
 
 ## type of value which can be use
