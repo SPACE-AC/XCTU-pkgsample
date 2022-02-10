@@ -26,12 +26,15 @@
 only use the first two index of list
 
 > range of random can only be in int or float format
+
 > if you want to random float start with int use 0.0
+
 > note: if the key of this value begins with GPS the float will convert to 7 decimal point
 
 **["A","B"]**
 
 > choose item randomly in list
+
 > use all value of list with the method of random.choice
 
 **String**
@@ -41,10 +44,15 @@ only use the first two index of list
 **simple condition**
 
 > a simple condition which will act as an easy if-else
+
 > `start` start value
+
 > `condition` comparision operater e.g. < > <= >= == !=
+
 > `action` action in which the condition is true
+
 > `else` action in which the condition is false
+
 > example value
 
 ```
