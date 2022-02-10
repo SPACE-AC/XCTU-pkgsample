@@ -1,0 +1,59 @@
+
+
+{
+  "projectName":"projectName",
+  "outputNum":1000,
+  "outputName":"SIM_File.xml",
+  
+  "data":[
+    {
+      "name":"Container",
+      "frequency":1,
+      "seperater":",",
+      "ending":"$",
+      "package":{
+        "TID":"1234",
+        "PKG":"pkg",
+        "TIM":"time",
+        "TYP":"C",
+        "MOD":"F",
+        "S1R":"N",
+        "S2R":"N",
+        "ALT":{
+          "start":0,
+          "condition":"<1000",
+          "action":"+10",
+          "else":0
+        },
+        "TEM":[30.0,60.0],
+        "VOL":[0.0,14.0],
+        "GTI":"time",
+        "GPSLAT":[13.000000,13.100000],
+        "GPSLON":[100.000000,101.100000],
+        "GAL":[0.0,800.0],
+        "SAT":[0,15],
+        "STA":["Prelaunch","Launch","APOGEE","Release_1","Release_2","LAND"],
+        "PK1":"pkg",
+        "PK2":"pkg",
+        "COM":"CX,ON"
+      }
+    },
+    {
+      "name":"Payload1",
+      "frequency":1,
+      "seperater":",",
+      "ending":"$",
+      "package":{
+        "TID":"1234",
+        "PKG":"pkg",
+        "TIM":"time",
+        "TYP":"S1",
+        "ALT":[0.0,800.0],
+        "TEM":[0.0,60.0],
+        "ROT":[0.0,2000.0],
+        "GPSLAT":[13.000000,13.100000],
+        "GPSLON":[100.000000,101.100000]
+      }
+    }
+  ]
+}
