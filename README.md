@@ -1,15 +1,52 @@
 # XCTU-pkgsample
 
-type of data which can be use
-PKG - running up number
-time - time in format hh:mm:ss
-[0,100] - range of random
-["A","B"] - choose item randomly in array
-any character - as it said any character you input here will be a constant in the xml file
+## Create an XCTU sample file
+
+## IMPORTANT KEY
+
+`projectName` name of the project : String
+`outputNum` data sample size : int
+`outputName` name of the output file : String
+`data` : list of dictionary; contain different data type
+
+## type of value which can be use
+
+** PKG **
+
+> running up number from 0 - your package number
+
+** time **
+
+> time - time in format hh:mm:ss
+
+** [0,100] ** list of int or float (choose either not both)
+only use the first two index of list
+
+> range of random can only be in int or float format
+> if you want to random float start with int use 0.0
+> note: if the key of this value begins with GPS the float will convert to 7 decimal point
+> ** ["A","B"] **
+> choose item randomly in list
+> use all value of list with the method of random.choice
+
+** String **
+
+> a constant value in the xml file e.g. teamID or package type
+
+** simple condition **
+
+> a simple condition which will act as an easy if-else
+> `start` start value
+> `condition` comparision operater e.g. < > <= >= == !=
+> `action` action in which the condition is true
+> `else` action in which the condition is false
+> example value
+
+```
 {
-"start":int,
-"condition":"<10",
+"start":0,
+"condition":"<1000",
 "action":"+10",
-"else":int
+"else":0
 }
-if key begins with "GPS" the random of pkg will round the number to 7 decimal digit
+```
