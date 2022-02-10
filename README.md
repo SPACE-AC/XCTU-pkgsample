@@ -11,29 +11,31 @@
 
 ## type of value which can be use
 
-** PKG **
+**PKG**
 
 > running up number from 0 - your package number
 
-** time **
+**time**
 
 > time - time in format hh:mm:ss
 
-** [0,100] ** list of int or float (choose either not both)
+**[0,100]** list of int or float (choose either not both)
 only use the first two index of list
 
 > range of random can only be in int or float format
 > if you want to random float start with int use 0.0
 > note: if the key of this value begins with GPS the float will convert to 7 decimal point
-> ** ["A","B"] **
+
+**["A","B"]**
+
 > choose item randomly in list
 > use all value of list with the method of random.choice
 
-** String **
+**String**
 
 > a constant value in the xml file e.g. teamID or package type
 
-** simple condition **
+**simple condition**
 
 > a simple condition which will act as an easy if-else
 > `start` start value
